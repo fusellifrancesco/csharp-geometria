@@ -9,6 +9,8 @@
 
 using Geometria;
 
+// INSTANZA RETTANGOLO 1
+
 Console.WriteLine("Inserisci il nome del rettangolo");
 string inputNomeRettangolo = Console.ReadLine();
 
@@ -19,11 +21,37 @@ Console.WriteLine("Inserisci l'altezza del rettangolo");
 int inputAltezza = int.Parse(Console.ReadLine());
 
 Rettangolo rettangolo1 = new Rettangolo();
+rettangolo1.nomeRettangolo = inputNomeRettangolo;
 rettangolo1.baseRettangolo = inputBase;
 rettangolo1.altezzaRettangolo = inputAltezza;
+rettangolo1.StampaRettangolo();
 
-Console.Write("L'Area del rettangolo è: ");
-Console.WriteLine(rettangolo1.CalcolaArea() + " cm2");
+Console.WriteLine("");
 
-Console.Write("Il Perimetro del rettangolo è: ");
-Console.WriteLine(rettangolo1.CalcolaPerimetro() + " cm");
+// PROVA METODO StampaRettangolo
+Console.WriteLine("PROVA METODO StampaRettangolo");
+
+Rettangolo rettangolo2 = new Rettangolo();
+Rettangolo rettangolo3 = new Rettangolo();
+Rettangolo rettangolo4 = new Rettangolo();
+Rettangolo rettangolo5 = new Rettangolo();
+
+rettangolo2.nomeRettangolo = "RETTANGOLO 2";
+rettangolo2.baseRettangolo = 20;
+rettangolo2.altezzaRettangolo = 10;
+rettangolo2.StampaRettangolo();
+
+rettangolo3.nomeRettangolo = "RETTANGOLO 3";
+rettangolo3.baseRettangolo = 5;
+rettangolo3.altezzaRettangolo = 10;
+rettangolo3.StampaRettangolo();
+
+rettangolo4.nomeRettangolo = "RETTANGOLO 4";
+rettangolo4.baseRettangolo = 96;
+rettangolo4.altezzaRettangolo = 43;
+rettangolo4.StampaRettangolo();
+
+rettangolo5.nomeRettangolo = "RETTANGOLO 5";
+rettangolo5.baseRettangolo = 100;
+rettangolo5.altezzaRettangolo = 200;
+rettangolo5.StampaRettangolo();
