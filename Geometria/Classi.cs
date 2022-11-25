@@ -5,6 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Geometria {
-    internal class Classi {
+    public class Rettangolo {
+        public int baseRettangolo;
+        public int altezzaRettangolo;
+
+        // METODI
+        public int calcolaArea() {
+            return baseRettangolo * altezzaRettangolo;
+        }
+
+        public int calcolaPerimetro() {
+            return (baseRettangolo + altezzaRettangolo) * 2;
+        }
+
     }
 }
