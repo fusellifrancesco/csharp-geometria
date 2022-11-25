@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Geometria {
     public class Rettangolo {
+        public string nomeRettangolo;
         public int baseRettangolo;
         public int altezzaRettangolo;
 
@@ -16,6 +17,14 @@ namespace Geometria {
 
         public int CalcolaPerimetro() {
             return (baseRettangolo + altezzaRettangolo) * 2;
+        }
+
+        public void StampaRettangolo() {
+            Console.WriteLine("--" + nomeRettangolo + "--");
+            Console.WriteLine("Base: " + baseRettangolo);
+            Console.WriteLine("Altezza: " + altezzaRettangolo);
+            Console.WriteLine("Perimetro: " + CalcolaPerimetro() + " cm");
+            Console.WriteLine("Area: " + CalcolaArea() + " cm2");
         }
 
     }
