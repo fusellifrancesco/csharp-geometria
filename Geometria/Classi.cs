@@ -10,11 +10,11 @@ namespace Geometria {
         public int altezzaRettangolo;
 
         // METODI
-        public int calcolaArea() {
+        public int CalcolaArea() {
             return baseRettangolo * altezzaRettangolo;
         }
 
-        public int calcolaPerimetro() {
+        public int CalcolaPerimetro() {
             return (baseRettangolo + altezzaRettangolo) * 2;
         }
 
